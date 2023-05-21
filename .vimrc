@@ -16,12 +16,13 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'Kranex/vim-rascal-syntax'
+Plugin 'morhetz/gruvbox'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 set background=dark
-colorscheme molokai
+colorscheme gruvbox
 "set path+=**
 syntax enable
 set ruler
