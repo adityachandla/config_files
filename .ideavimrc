@@ -26,4 +26,4 @@ map Q gq
 
 " Find more examples here: https://jb.gg/share-ideavimrc
 :inoremap jj <esc>
-set clipboard=unnamedplus
+set clipboard=unnamedplusset clipboard^=ideaput

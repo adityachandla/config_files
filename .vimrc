@@ -38,7 +38,7 @@ nnoremap <SPACE> <Nop>
 let mapleader=" "
 
 ""Fuzzy finder
-nnoremap <tab> :Files<CR>
+nnoremap <tab> :GFiles<CR>
 
 "" Nerdtree maping
 map <leader>o :NERDTreeToggle<CR>

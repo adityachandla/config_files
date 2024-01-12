@@ -117,8 +117,8 @@ if ! shopt -oq posix; then
 fi
 . "$HOME/.cargo/env"
 
+export PATH=$PATH:/usr/local/go/bin
 TERM=xterm-256color
 alias pbcopy='xclip -selection c'
-export PATH=:$PATH:/home/aditya/Downloads/apps/apache-maven-3.9.1/bin
 alias texclean='rm -f *.log *.aux *.gz *.fls'
 alias compJava='cp ~/Documents/competetive/JavaTemplate.java ./Main.java'
