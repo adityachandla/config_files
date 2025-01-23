@@ -115,10 +115,17 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-. "$HOME/.cargo/env"
 
 export PATH=$PATH:/usr/local/go/bin
+export VCPKG_ROOT=~/Documents/projects/cpp_projects/vcpkg
+export PATH=$VCPKG_ROOT:$PATH
+export CMAKE_GENERATOR=Ninja
+export CMAKE_EXPORT_COMPILE_COMMANDS=On
 TERM=xterm-256color
 alias pbcopy='xclip -selection c'
 alias texclean='rm -f *.log *.aux *.gz *.fls'
-alias compJava='cp ~/Documents/competetive/JavaTemplate.java ./Main.java'
+alias proj='cd $(find ~/Documents/projects/ -maxdepth 1 -type d  | fzf)'
+alias gstat='git status'
+alias gpush='git push origin $(git branch --show-current)'
+alias cb='git branch --show-current'
+set -o vi
